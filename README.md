@@ -1,5 +1,5 @@
 # kubectl-aliases-list
-Kubectl aliases for daily use
+This repository contains a complete list of commonly used kubectl commands and flags.
 ## Kubectl autocomplete
 
 ### BASH
