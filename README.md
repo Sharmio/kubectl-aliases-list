@@ -23,25 +23,16 @@ source <(kubectl completion zsh)  # setup autocomplete in zsh into the current s
 echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
 ### Examples
 ```
-Some of the 800 generated aliases are:
 
+### Creating Object 
 ```sh
 alias k='kubectl'
-alias kg='kubectl get'
-alias kgpo='kubectl get pod'
+alias kc='kubectl create'
+alias kcf='kubectl create -f'     
 
-alias ksysgpo='kubectl --namespace=kube-system get pod'
+# creating clusterrole
+alias kccr='kubectl create clusterrole' #kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
+clusterrolebinding
+alias kccr='kubectl create clusterrole' #kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
 
-alias krm='kubectl delete'
-alias krmf='kubectl delete -f'
-alias krming='kubectl delete ingress'
-alias krmingl='kubectl delete ingress -l'
-alias krmingall='kubectl delete ingress --all-namespaces'
-
-alias kgsvcoyaml='kubectl get service -o=yaml'
-alias kgsvcwn='watch kubectl get service --namespace'
-alias kgsvcslwn='watch kubectl get service --show-labels --namespace'
-
-alias kgwf='watch kubectl get -f'
-...
 ```
