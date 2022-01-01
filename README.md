@@ -22,7 +22,7 @@ complete -F __start_kubectl k
 source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
 echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
 ### Examples
-
+```
 Some of the 800 generated aliases are:
 
 ```sh
