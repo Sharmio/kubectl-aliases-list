@@ -32,7 +32,11 @@ alias kcf='kubectl create -f'
 
 # creating clusterrole
 alias kccr='kubectl create clusterrole' #kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
-clusterrolebinding
-alias kccr='kubectl create clusterrole' #kubectl create clusterrole pod-reader --verb=get,list,watch --resource=pods
+
+# creating clusterrolebinding
+
+## Examples:
+## Create a cluster role binding for user1, user2, and group1 using the cluster-admin cluster role
+alias kccrb='kubectl create clusterrolebinding' ## kubectl create clusterrolebinding cluster-admin --clusterrole=cluster-admin --user=user1 --user=user2 --group=group1
 
 ```
