@@ -25,4 +25,3 @@ echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc 
 
 ### Creating Objects
 [Create a resource from a file or from stdin.](./creating-objects/README.MD) (JSON and YAML formats are accepted.)
-
