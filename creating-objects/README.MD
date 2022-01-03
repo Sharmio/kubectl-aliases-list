@@ -28,10 +28,8 @@ alias kccm='kubectl create configmap'
 # creating cronjob
 
 ## Examples:
-## Create a cron job
 alias kccj='kubectl create cronjob'
-
 ## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *"
 ## Create a cron job with a command
-## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *" -- date -->
+## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *" -- date
 ```
