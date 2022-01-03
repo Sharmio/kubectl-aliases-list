@@ -24,3 +24,14 @@ alias kccrb='kubectl create clusterrolebinding'
 alias kccm='kubectl create configmap' 
 ## kubectl create configmap my-config --from-file=path/to/bar
 ```
+```sh
+# creating cronjob
+
+## Examples:
+## Create a cron job
+alias kccj='kubectl create cronjob'
+
+## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *"
+## Create a cron job with a command
+## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *" -- date -->
+```
