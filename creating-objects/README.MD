@@ -2,7 +2,8 @@
 ```sh
 alias k='kubectl'
 alias kc='kubectl create'
-alias kcf='kubectl create -f'     
+alias kcf='kubectl create -f' 
+export do="--dry-run=client -o yaml"    
 ```
 ```sh
 # creating clusterrole
