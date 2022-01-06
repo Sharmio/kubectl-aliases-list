@@ -34,3 +34,21 @@ alias kccj='kubectl create cronjob'
 ## Create a cron job with a command
 ## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *" -- date
 ```
+```sh
+# creating deploy or deployment
+
+## Examples:
+alias kcd='kubectl create deployment' or
+alias kcd='kubectl create deploy'
+## Create a deployment named my-dep that runs the busybox image
+## kubectl create deployment my-dep --image=busybox
+
+## Create a deployment with a command
+## kubectl create deployment my-dep --image=busybox -- date
+
+## Create a deployment named my-dep that runs the nginx image with 3 replicas
+## kubectl create deployment my-dep --image=nginx --replicas=3
+
+## Create a deployment named my-dep that runs the busybox image and expose port 5701
+## kubectl create deployment my-dep --image=busybox --port=5701
+```
