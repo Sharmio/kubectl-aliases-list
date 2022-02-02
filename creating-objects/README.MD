@@ -73,7 +73,8 @@ alias kci='kubectl create ingress'
 ##  --annotation ingress.annotation2=bla
   
 ## Create an ingress with the same host and multiple paths
-  kubectl create ingress multipath --class=default \
-  --rule="foo.com/=svc:port" \
-  --rule="foo.com/admin/=svcadmin:portadmin"
+##  kubectl create ingress multipath --class=default \
+##  --rule="foo.com/=svc:port" \
+##  --rule="foo.com/admin/=svcadmin:portadmin"
+
 ```
