@@ -67,12 +67,12 @@ alias kci='kubectl create ingress'
 ## Create a catch all ingress of "/path" pointing to service svc:port and Ingress Class as "otheringress"
 ##  kubectl create ingress catch-all --class=otheringress --rule="/path=svc:port"
   
-  # Create an ingress with two annotations: ingress.annotation1 and ingress.annotations2
-  kubectl create ingress annotated --class=default --rule="foo.com/bar=svc:port" \
-  --annotation ingress.annotation1=foo \
-  --annotation ingress.annotation2=bla
+## Create an ingress with two annotations: ingress.annotation1 and ingress.annotations2
+##  kubectl create ingress annotated --class=default --rule="foo.com/bar=svc:port" \
+##  --annotation ingress.annotation1=foo \
+##  --annotation ingress.annotation2=bla
   
-  # Create an ingress with the same host and multiple paths
+## Create an ingress with the same host and multiple paths
   kubectl create ingress multipath --class=default \
   --rule="foo.com/=svc:port" \
   --rule="foo.com/admin/=svcadmin:portadmin"
