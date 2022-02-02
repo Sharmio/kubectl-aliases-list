@@ -34,6 +34,7 @@ alias kccj='kubectl create cronjob'
 ## Create a cron job with a command
 ## kubectl create cronjob my-job --image=busybox --schedule="*/1 * * * *" -- date
 ```
+
 ```sh
 # creating deploy or deployment
 
@@ -51,4 +52,28 @@ alias kcd='kubectl create deploy'
 
 ## Create a deployment named my-dep that runs the busybox image and expose port 5701
 ## kubectl create deployment my-dep --image=busybox --port=5701
+```
+
+```sh
+# creating ingress
+
+## Examples:
+alias kci='kubectl create ingress'
+
+## Create a single ingress called 'simple' that directs requests to foo.com/bar to svc
+## svc1:8080 with a tls secret "my-cert"
+##  kubectl create ingress simple --rule="foo.com/bar=svc1:8080,tls=my-cert"
+
+## Create a catch all ingress of "/path" pointing to service svc:port and Ingress Class as "otheringress"
+##  kubectl create ingress catch-all --class=otheringress --rule="/path=svc:port"
+  
+  # Create an ingress with two annotations: ingress.annotation1 and ingress.annotations2
+  kubectl create ingress annotated --class=default --rule="foo.com/bar=svc:port" \
+  --annotation ingress.annotation1=foo \
+  --annotation ingress.annotation2=bla
+  
+  # Create an ingress with the same host and multiple paths
+  kubectl create ingress multipath --class=default \
+  --rule="foo.com/=svc:port" \
+  --rule="foo.com/admin/=svcadmin:portadmin"
 ```
