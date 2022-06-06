@@ -1,4 +1,4 @@
-# kubectl-aliases-list
+# kubectl-aliases-list [Under Development]
 This repository contains a complete list of commonly used kubectl commands and flags.
 
 ## Kubectl autocomplete
